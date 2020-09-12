@@ -56,9 +56,10 @@ f.collide(edges[3]);
   s= s+ Math.round(frameCount /300)
  
   
-    if (keyDown("space")) {
+    if (keyDown("space")|| touches.length<0) {
     f.velocityY = -4;
-   // playSound("sound://category_pop/bamboo_pop_v2_notification4.mp3");
+      touches=[]
+    //playSound("sound://category_pop/bamboo_pop_v2_notification4.mp3");
   }
 
   f.velocityY = f.velocityY +0.5;
